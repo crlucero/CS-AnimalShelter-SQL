@@ -1,0 +1,8 @@
+<h1>Here's a complete list of animals in our shelter</h1>
+
+@foreach (var item in Model)
+{
+    <li><a href="/animal/@item.GetId()">@item.GetName()</a></li>
+}
+<a href="/animal/new"> Add another animal.</a>
+<a href="/animal/recent">Sort animals by most recent</a>

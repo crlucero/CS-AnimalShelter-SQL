@@ -1,0 +1,12 @@
+<h1>Here's information on the animal you selected.</h1>
+
+@foreach (var item in Model)
+{
+    <li>@item.GetName()</li>
+    <li>@item.GetAnimalType()</li>
+    <li>@item.GetSex()</li>
+    <br>
+}
+<a href="/"> Go back to main page</a>
+<br>
+<a href="/animal/new">Add another animal</a>
